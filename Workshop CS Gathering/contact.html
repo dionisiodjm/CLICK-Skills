@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<div id="image"></div>
+<div id="header">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="estudante.html">Students</a></li>
+        <li><a href="manorin.html">Tutors</a></li>
+        <li><a href="materia.html">Lessons</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<div class="content-wrapper">
+    <section class="content-header">
+        <h1>KONTAKTU AMI</h1>
+        <form id="contactForm">
+            <label>Naran Kompletu :</label>
+            <input type="text" name="inputnaran" placeholder="Favor Prense Naran" required>
+            <label>Email :</label>
+            <input type="email" name="inputemail" placeholder="Favor Prense Email" required>
+            <label>Mensajem :</label>
+            <input type="text" name="inputmensajem" placeholder="Favor Prense Mensajen" required>
+            <button type="submit">Manda Mensajem</button>
+        </form>
+        <div id="responseMessage" style="display:none; margin-top: 20px; text-align: center; color: green;"></div>
+    </section>
+</div>
+<div id="footer">
+	Copiright@ <b>Click Skills</b> | <i>Community Gathering & Workshop Design Website Basic</i>
+</div>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Orienta Mandamentu Mensajem husi Formulario
+
+        // Foti Dadus neebe input husi Formulario
+        const name = this.inputnaran.value;
+        const email = this.inputemail.value;
+        const message = this.inputmensajem.value;
+
+        // Fo sai informasaun Susesu nian
+        const responseMessage = document.getElementById('responseMessage');
+        responseMessage.textContent = `Obrigado Wain!, ${name}! Mensajem Manda ona ho Sucessu.`;
+        responseMessage.style.display = 'block';
+
+        // Reset form
+        this.reset();
+    });
+</script>
+</body>
+</html>

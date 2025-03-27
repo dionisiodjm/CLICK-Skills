@@ -1,0 +1,214 @@
+/* CSS kona ba Kontestu sira no parte pajina HOME nian*/
+#image {
+  background-image: url("imajen/img.jpg");
+  padding-left: 100px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  height: 130px;
+}
+
+#header {
+  background-color: black;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  padding: 6px;
+  padding-left: 60px;
+}
+
+#section {
+  width: 400px;
+  float: left;
+  padding: 50px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+a:link, a:visited {
+  display: block;
+  width: 125px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 3px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+a:hover, a:active {
+  background-color: green;
+}
+
+.content-wrapper {
+  margin-left: 100px;
+  margin-right: 100px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.content-header { 
+  position: relative; 
+  padding: 15px 15px 0 15px; 
+}
+
+p{ 
+text-align:justify; 
+} 
+
+h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+h2 {
+  font-size: 25;
+  color: gray;
+  text-align: center;
+}
+h4 {
+  font-size: 25;
+  color: blue;
+  text-align: center;
+}
+
+/* CSS kona ba Galleria nian*/
+img {
+  width: 100px;
+  height: 100px;
+}
+.content-wrapper {
+    padding: 20px;
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: center; 
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-title {
+    margin-top: 10px; 
+    font-size: 16px;
+    color: #333; 
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+/* CSS kona ba Galleria nian remata iha ne'e*/
+
+/*Style kona ba Contact Us nia*/
+
+ label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+
+/*Style kona ba Contact Us nian remata iha ne'e
+*/
+
+/* CSS kona ba lista tabela estudante, materia no manorin nian*/
+table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        } /* CSS kona ba lista tabela estudante, materia no manorin nian remata iha nee*/
+
+
+
+/* CSS untuk footer */
+#footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    position: relative;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); 
+    margin-top: 20px; 
+}
+
+#footer b {
+    color: #ffcc00;
+}
+
+#footer i {
+    display: block; 
+    margin-top: 5px; 
+    font-style: italic;
+}
+
+#footer:hover {
+    background-color: #444; 
+    transition: background-color 0.3s;
+}
+
